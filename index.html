@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Skillbox</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillbox</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Порядок стилей важен, не допускается подключение файла normalize.css последним файлом,
+     потому что он тогда сможет переопределить твои стили, а это плохо и опасно-->
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-	<div class="main-container">
+<!--отсутствует тег main-->
+<div class="main-container">
 
-		<a href="/" class="logo">
-			<img src="/images/skillbox-logo.svg" alt="skillbox logo">
-		</a>
-		<a href="/" class="to-main-page">На главную</a>
-		<h1 class="title">Модули курса Веб-верстка</h1>
-		
-		<div class="card-container">
-			
-			<div class="card">
-				<img src="/images/intro-card.svg" alt="introduction">
-				<a href="/" class="card-title">Введение</a>
-				<ul>
-					<li>Как работают сайты. Верстка</li>
-					<li>Возможности HTML, CSS, JS</li>
-					<li>Редактор кода. Codepen</li>
-					<li>Работа с DevTools</li>
-				</ul>
-				<p class="card-number">01</p>
-			</div>
-			
-			<div class="card">
-				<img src="/images/basic-html-card.svg" alt="basic html">
-				<a href="/" class="card-title">Базовый HTML</a>
-				<ul>
-					<li>Базовые теги</li>
-					<li>Теги картинок и ссылок</li>
-					<li>Теги таблиц</li>
-					<li>Служебные Теги</li>
-					<li>Кодстайл HTML</li>
-				</ul>
-				<p class="card-number">02</p>
-			</div>
-			
-			<div class="card">
-				<img src="/images/basic-css-card.svg" alt="basic css">
-				<a href="/" class="card-title">Базовый CSS</a>
-				<ul>
-					<li>Подключение CSS</li>
-					<li>Вес селектора</li>
-					<li>Свойство display</li>
-					<li>Блочная модель и позиционирование</li>
-					<li>Кодстайл CSS</li>
-				</ul>
-				<p class="card-number">03</p>
-			</div>
-			
-			<div class="card">
-				<img src="/images/layout-work-card.svg" alt="layout work">
-				<a href="/" class="card-title">Работа с макетом</a>
-				<ul>
-					<li>Про форматы изображений</li>
-					<li>Работа с макетом в Photoshop</li>
-					<li>Работа с макетом в Figma</li>
-				</ul>
-				<p class="card-number">04</p>
-			</div>
-			
-		</div>
 
-		<button class="show-more-btn">Показать еще</button>
+    <!--Вместо href="/" => href="#". Диез обозначает «заглушку» -->
+    <a href="/" class="logo">
+        <img src="/images/skillbox-logo.svg" alt="skillbox logo">
+    </a>
+    <!--Вместо href="/" => href="#". Диез обозначает «заглушку» -->
+    <a href="/" class="to-main-page">На главную</a>
 
-		</div>
+    <!--Отсутствует тег section-->
+    <h1 class="title">Модули курса Веб-верстка</h1>
+
+    <!--Неверный нейминг класса. Просто container-->
+    <div class="card-container">
+        <!--Неверное сематическое построение карточек. Если есть список однотипных элементов, значит это список.
+        <ol class='list-card'>
+            <li class='card'>
+                @yourContent
+            </li>
+            <li class='card'>
+                @yourContent
+            </li>
+            <li class='card'>
+                @yourContent
+            </li>
+            <li class='card'>
+                @yourContent
+            </li>
+         </ol>
+        -->
+
+        <!--Это не div, а тег li вверху описан пример-->
+        <div class="card">
+            <!--Отсутствует тег article-->
+            <!--Неверное сематическое использование тега. Тег img тут использован быть не может.
+             Правильная реализация это фоновая картинка на теге li -->
+            <img src="/images/intro-card.svg" alt="introduction">
+            <!--Это не ссылка, а заголовок-->
+            <a href="/" class="card-title">Введение</a>
+            <ul>
+                <li>Как работают сайты. Верстка</li>
+                <li>Возможности HTML, CSS, JS</li>
+                <li>Редактор кода. Codepen</li>
+                <li>Работа с DevTools</li>
+            </ul>
+            <p class="card-number">01</p>
+        </div>
+
+        <div class="card">
+            <img src="/images/basic-html-card.svg" alt="basic html">
+            <a href="/" class="card-title">Базовый HTML</a>
+            <ul>
+                <li>Базовые теги</li>
+                <li>Теги картинок и ссылок</li>
+                <li>Теги таблиц</li>
+                <li>Служебные Теги</li>
+                <li>Кодстайл HTML</li>
+            </ul>
+            <p class="card-number">02</p>
+        </div>
+
+        <div class="card">
+            <img src="/images/basic-css-card.svg" alt="basic css">
+            <a href="/" class="card-title">Базовый CSS</a>
+            <ul>
+                <li>Подключение CSS</li>
+                <li>Вес селектора</li>
+                <li>Свойство display</li>
+                <li>Блочная модель и позиционирование</li>
+                <li>Кодстайл CSS</li>
+            </ul>
+            <p class="card-number">03</p>
+        </div>
+
+        <div class="card">
+            <img src="/images/layout-work-card.svg" alt="layout work">
+            <a href="/" class="card-title">Работа с макетом</a>
+            <ul>
+                <li>Про форматы изображений</li>
+                <li>Работа с макетом в Photoshop</li>
+                <li>Работа с макетом в Figma</li>
+            </ul>
+            <p class="card-number">04</p>
+        </div>
+
+    </div>
+
+    <button class="show-more-btn">Показать еще</button>
+</div>
 </body>
 </html>

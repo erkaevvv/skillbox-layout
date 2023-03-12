@@ -1,95 +1,112 @@
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container {
-	margin: 0 auto;
-	max-width: 1169px;
+    margin: 0 auto;
+    max-width: 1169px;
+    /*Необходимо задать padding-top в размере margin-top для тега section*/
 }
 
 .logo {
-	display: block;
-	margin-top: 50px;
-	width: 137px;
-	height: 30px;
+    display: block;
+    /*Элементы отталкивают только нижние элементы то есть только через margin-bottom,
+   вверх отталкиваться не стоит, поскольку это не очень предсказуемое поведение и удобное*/
+    margin-top: 50px;
+    width: 137px; /*width: max-content*/
+    height: 30px; /*данное значение не требуется*/
 }
 
 .to-main-page {
-	display: block;
-	margin-top: 25px;
-	padding-left: 52px;
-	background-image: url(/images/arrow-to-main-page.svg);
-	background-repeat: no-repeat;
-	background-position: left;
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: 400;
-	color: #3F2AFF;	
+    /*Какое поведение блочных элементов?
+           Ссылка растянута на весь экран и по ней можно теперь кликать далеко вне ее текста*/
+    display: block;
+    margin-top: 25px; /*Только нижние отступы*/
+    padding-left: 52px;
+    background-image: url(/images/arrow-to-main-page.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3F2AFF;
+    /*Не указан line-height*/
 }
 
 .title {
-	margin-top: 25px;
-	font-size: 60px;
-	font-weight: 700;
-	color: #3F2AFF;
+    margin-top: 25px; /*Только нижний отступ*/
+    font-size: 60px;
+    /*Не указан line-height*/
+    font-weight: 700;
+    color: #3F2AFF;
 }
 
 .card-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 25px;
-	margin-top: 50px;
-	width: 1169px;
-	height: 1035px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+    width: 1169px;
+    height: 1035px; /*Высоту указывать не надо*/
 }
 
 .card {
-	position: relative;
-	width: 572px;
-	height: 505px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    width: 572px; /*max-width*/
+    height: 505px; /*min-height*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-title {
-	display: block;
-	margin-top: 25px;
-	margin-left: 25px;
-	margin-bottom: 0px;
-	text-decoration: none;
-	font-size: 40px;
-	font-weight: 700;
-	color: #3F2AFF;
+    display: block; /*Заголовки по умолчанию блочные*/
+    margin-top: 25px; /*Только нижние отступы допускаются*/
+    margin-left: 25px;
+    /*Ноль значит ноль, ноль пикселей или же ноль процентов это не важно,
+       поэтому указывать единицу измерения не надо*/
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3F2AFF;
+    /*отсутствует line-height*/
 }
 
+/*Запрещается по хорошим практикам обращаться к тегам не через класс, поскольку это влечет за собой много проблем
+А что если в проекте потом появится еще один список, но у него нужно будет другое поведение?*/
 ul {
-	padding: 0;
-	margin-top: 2px;
-	margin-left: 25px;
-	list-style-type: none;
-	font-size: 20px;
-	line-height: 33px;
+    padding: 0;
+    margin-top: 2px;
+    margin-left: 25px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 33px;
 }
 
 .card-number {
-	position: absolute;
-	bottom: 25px;
-	right: 25px;
-	margin: 0;
-	font-size: 40px;
-	font-weight: 400;
-	color: #EAEAEA;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #EAEAEA;
 }
 
 .show-more-btn {
-	display: block;
-	margin: 50px auto;
-	padding: 25px 75px;
-	background-color: #FFF;
-	border: solid 2px #3F2AFF;
-	font-size: 18px;
-	font-weight: 700;
-	color: #3F2AFF;
+    display: block;
+    /*отталкиваются элементы только вниз, но в данном случае убрать нижний и верхний отступ требуется.
+    Нижний отступ вынести в padding на тег section
+   */
+    margin: 50px auto;
+
+    padding: 25px 75px;
+    background-color: #FFF;
+    border: solid 2px #3F2AFF;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3F2AFF;
+    /*line-height требуется*/
 }
