@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+	margin: 0 auto;
+	max-width: 1169px;
+}
+
+.logo {
+	display: block;
+	margin-top: 50px;
+	width: 137px;
+	height: 30px;
+}
+
+.to-main-page {
+	display: block;
+	margin-top: 25px;
+	padding-left: 52px;
+	background-image: url(/images/arrow-to-main-page.svg);
+	background-repeat: no-repeat;
+	background-position: left;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+	color: #3F2AFF;	
+}
+
+.title {
+	margin-top: 25px;
+	font-size: 60px;
+	font-weight: 700;
+	color: #3F2AFF;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-top: 50px;
+	width: 1169px;
+	height: 1035px;
+}
+
+.card {
+	position: relative;
+	width: 572px;
+	height: 505px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+	display: block;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 0px;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 700;
+	color: #3F2AFF;
+}
+
+ul {
+	padding: 0;
+	margin-top: 2px;
+	margin-left: 25px;
+	list-style-type: none;
+	font-size: 20px;
+	line-height: 33px;
+}
+
+.card-number {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	margin: 0;
+	font-size: 40px;
+	font-weight: 400;
+	color: #EAEAEA;
+}
+
+.show-more-btn {
+	display: block;
+	margin: 50px auto;
+	padding: 25px 75px;
+	background-color: #FFF;
+	border: solid 2px #3F2AFF;
+	font-size: 18px;
+	font-weight: 700;
+	color: #3F2AFF;
+}
