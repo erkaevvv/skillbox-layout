@@ -1,0 +1,135 @@
+body {
+	padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1169px;
+}
+
+.main__container {
+	padding-top: 50px;
+}
+
+.content-section {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.logo {
+  display: inline-block;
+	margin-bottom: 25px;
+  width: 137px;
+}
+
+.to-main-page {
+  display: block;
+  padding-left: 52px;
+	width: max-content;
+  background-image: url(/img/arrow-to-main-page.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+	line-height: 23px;
+  color: #3F2AFF;
+}
+
+.title {
+	margin-top: 0;
+	margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 700;
+	line-height: 69px;
+  color: #3F2AFF;
+}
+
+.list-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding: 0;
+	list-style-type: none;
+  max-width: 1169px;
+}
+
+.card {
+  position: relative;
+  max-width: 572px;
+  min-height: 505px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:nth-child(1) {
+	background-image: url(/img/intro-card.svg);
+	background-repeat: no-repeat;
+}
+
+.card:nth-child(2) {
+	background-image: url(/img/basic-html-card.svg);
+	background-repeat: no-repeat;
+}
+
+.card:nth-child(3) {
+	background-image: url(/img/basic-css-card.svg);
+	background-repeat: no-repeat;
+}
+
+.card:nth-child(4) {
+	background-image: url(/img/layout-work-card.svg);
+	background-repeat: no-repeat;
+}
+
+.card-img {
+	width: 572px;
+	height: 180px;
+	margin-bottom: 25px;
+}
+
+.card-title {
+	margin-top: 0;
+  margin-bottom: 2px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #3F2AFF;
+}
+
+.card-description {
+  margin-left: 25px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+	font-weight: 400;
+  line-height: 33px;
+}
+
+.card-number {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+	line-height: 46px;
+  color: #EAEAEA;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 75px;
+  background-color: #FFF;
+  border: solid 2px #3F2AFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20.7px;
+  color: #3F2AFF;
+}
