@@ -1,0 +1,20 @@
+@import './normalize';
+@import './blocks/main';
+@import './blocks/container';
+@import './blocks/logo';
+@import './blocks/to-main-page';
+@import './blocks/content-section';
+@import './blocks/heading';
+@import './blocks/cards';
+@import './blocks/card';
+@import './blocks/button';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}

@@ -1,0 +1,50 @@
+.card {
+  position: relative;
+	padding-left: 25px;
+  flex-basis: 572px;
+  min-height: 505px;
+	background-repeat: no-repeat;
+	background-size: 100% 180px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		&__heading {
+			margin-top: 0;
+  		margin-bottom: 2px;
+			padding-top: 205px;
+  		text-decoration: none;
+  		font-size: 40px;
+  		color: #3F2AFF;
+		}
+
+		&__description {
+			padding: 0;
+			list-style-type: none;
+			font-size: 20px;
+			line-height: 1.65;
+		}
+
+		&__number {
+			position: absolute;
+  		bottom: 25px;
+  		right: 25px;
+  		margin: 0;
+  		font-size: 40px;
+  		color: #EAEAEA;
+		}
+
+		&:nth-child(1) {
+			background-image: url(/img/intro-card.svg);
+		}
+
+		&:nth-child(2) {
+			background-image: url(/img/basic-html-card.svg);
+		}
+
+		&:nth-child(3) {
+			background-image: url(/img/basic-css-card.svg);
+		}
+
+		&:nth-child(4) {
+			background-image: url(/img/layout-work-card.svg);
+		}
+}

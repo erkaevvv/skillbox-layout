@@ -1,0 +1,18 @@
+.content-section {
+	padding-top: 25px;
+	padding-bottom: 50px;
+
+		&__heading {
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+
+		&__cards {
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+
+		&__button {
+			margin: 0 auto;
+		}
+}
